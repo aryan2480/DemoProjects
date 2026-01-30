@@ -1,0 +1,6 @@
+<h1>My Real Tasks</h1>
+<ul>
+    {% for t in tasks %}
+        <li>{{ t.title }} - {% if t.is_done %} Done! {% else %} Not Done {% endif %}</li>
+    {% endfor %}
+</ul>
